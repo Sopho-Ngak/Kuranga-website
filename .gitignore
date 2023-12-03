@@ -1,0 +1,14 @@
+/env/
+/venv/
+**/__pycache__/**
+*__pycache__*
+.env
+/venv/
+**/__pycache__/**
+*__pycache__*
+.env
+db.sqlite3
+**/migrations/*
+!/**/migrations/__init__.py
+*/migrations/*
+media/*

@@ -1,0 +1,544 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Finance Business HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-finance-business.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    
+<!--
+
+Finance Business TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+250-781-278-118</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+              <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"><h2>KURANGA DIGITAL Ltd</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services' %}">Our Services</a>
+              </li>                          
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="{% url 'one-page' %}">One Page</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Give your career a real boost</h6>
+                  <h4>We Train<br>&amp; guide</h4>
+                  <!-- <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. This is a multiple-page version with different HTML pages. <a href="one-page.html">One-page version</a> is available as of 2021 February.</p> -->
+                  <p style="text-align: justify;">We train students, job seekers and intitution on modern technologies in the market. We collaborate with capacity development center and universities. We host students during their industrial attachement in partnership with companies.</p>
+                  <a href="{% url 'contact' %}" class="filled-button">contact us</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are here to support you</h6>
+                  <h4>Accounting<br>&amp; Management</h4>
+                  <!-- <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this template ZIP file on any template download website. Please contact TemplateMo for more detail.</p> -->
+                  <p style="text-align: justify;">Committed to your success, we stand as your dedicated support system. Under the banner of "Accounting and Management," we offer more than just services; we provide a partnership built on trust and reliability.</p>
+                  <a href="{% url 'services' %}" class="filled-button">our services</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we have a solid background</h6>
+                  <h4>Market Analysis<br>&amp; Statistics</h4>
+                  <!-- <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p> -->
+                  <p style="text-align: justify;">At our core, we possess a robust foundation, symbolized by our unwavering commitment to excellence. Through a lens of expertise and precision, we specialize in Market Analysis and Statistics.</p>
+                  <a href="{% url 'about' %}" class="filled-button">learn more</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Request a call back right now ?</h4>
+            <span>Take the next step in unlocking opportunities – Request a call back for prompt assistance.</span>
+          </div>
+          <div class="col-md-4">
+            <a href="{% url 'contact' %}" class="border-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>The <em>Services</em> we provide</h2>
+              <span>Explore the impactful services we offer at Kuranga</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'assets/images/quickbook.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Quickbooks & Xero Setup</h4>
+                <p style="text-align: justify;">Effortless financial management begins with our expert QuickBooks and Xero setup services – ensuring seamless and accurate bookkeeping for your business.</p>
+                <a href="{% url 'services' %}" class="filled-button">click for More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'assets/images/payroll.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Budget & payroll</h4>
+                <p style="text-align: justify;">Explore our dedicated Budget and Payroll services for streamlined operations and precise financial planning. simplifying complexities for a streamlined operation</p>
+                <a href="{% url 'services' %}" class="filled-button">click for More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'assets/images/sales_software.png' %}" alt="">
+              <div class="down-content">
+                <h4>Software Sales</h4>
+                <p style="text-align: justify;">Unlock growth with our Software Sales expertise – tailored solutions for businesses seeking powerful and efficient software solutions.</p>
+                <a href="{% url 'services' %}" class="filled-button">Click for More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              <span>Give your career a real boost at Kuranga</span>
+              <h2>Our solutions for your <em>business growth</em></h2>
+              <p style="text-align: justify;">Explore our comprehensive solutions meticulously crafted to foster your business growth. From seamless financial management through expert QuickBooks and Xero setup to precision in Budget and Payroll services, and finally, empowering your operations with strategic Software Sales. 
+                <br><br>Our offerings are tailored to elevate every facet of your business, ensuring sustained success and strategic advancement in a competitive landscape.
+              </p>
+              <a href="{% url 'services' %}" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">945</div>
+                  <div class="count-title">Students Trained</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">1280</div>
+                  <div class="count-title">Great Reviews</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">578</div>
+                  <div class="count-title">Projects Done</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">26</div>
+                  <div class="count-title">Awards Won</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{% static 'assets/images/kuranga-about.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Who we are</span>
+                    <h3>Get to know about <em>our company</em></h3> 
+                    <br>
+                    <!-- <p>At Kuranga Ltd, we are more than just a financial services provider—we are your dedicated partner in navigating the intricate landscape of finance with confidence. Our commitment to excellence, innovation, and client satisfaction sets us apart.</p> -->
+                    <p style="text-align: justify;">As technologies continually re-invent the ways business gets done, information itself is often an organization’s most valuable weapon. Keeping this in view, KURANGA DIGITAL
+                      LTD helps the tech-savvy organizations to fulfill their business vision by offering time-bound, high-quality, cost-effective solutions that optimize their operations and move ahead of
+                      the competition. <em>KURANGA DIGITAL Ltd </em>KURANGA DIGITAL Ltd is specialized in computer programming activities, Data
+                      processing and Training Activities in Rwanda since 2014.</p>
+                    <!-- <p>Founded on the principles of transparency, integrity, and a passion for financial empowerment, Kuranga Ltd has emerged as a trusted resource for businesses seeking tailored financial solutions. We take pride in offering a comprehensive suite of services, including bookkeeping, consultation, training, software sales, and troubleshooting, designed to address the diverse needs of our clients.</p> -->
+                    <!-- <p>With a team of seasoned professionals, cutting-edge technology, and a client-centric approach, we strive to go beyond conventional financial services. Whether you are a startup, an established enterprise, or an individual seeking financial guidance, Kuranga Ltd is here to be your strategic ally in achieving your financial goals.</p>
+                    <p>Explore the depth of our expertise, the breadth of our services, and the personalized attention we bring to every client relationship. Get to know Kuranga Ltd, and discover how we can empower your financial journey for sustained success.</p> -->
+                    <a href="{% url 'about' %}" style="display:block; text-align:center" class="filled-button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>What they say <em>about us</em></h2>
+              <span>testimonials from our greatest clients</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>George Walker</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p style="text-align: justify;">"Delighted to share my positive experience with the team! George Walker here, and I've been thoroughly impressed by their professionalism and commitment to excellence. Their tailored solutions have played a key role in driving my business forward. Highly recommend their services for anyone seeking quality and reliability in every aspect."</p>
+                </div>
+                <!-- <img src="http://placehold.it/60x60" alt=""> -->
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>John Smith</h4>
+                  <span>Market Specialist</span>
+                  <p style="text-align: justify;">"Having experienced the exceptional services provided by this team, I must express my gratitude. The attention to detail and commitment to excellence truly set them apart. My journey with them has been nothing short of outstanding, and I highly recommend their services for anyone seeking top-notch solutions and dedicated support."</p>
+                </div>
+                <!-- <img src="http://placehold.it/60x60" alt=""> -->
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>David Wood</h4>
+                  <span>Chief Accountant</span>
+                  <p style="text-align: justify;">"David Wood here, and I can't help but express my satisfaction with the exceptional services provided by this team. Their attention to detail, coupled with a commitment to client success, has truly made a difference for me. If you're looking for reliable solutions and a dedicated team, look no further – highly recommended. They are doing a good job!"</p>
+                </div>
+                <!-- <img src="http://placehold.it/60x60" alt=""> -->
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Andrew Boom</h4>
+                  <span>Marketing Head</span>
+                  <p style="text-align: justify;">"Andrew Boom here, and I'm thrilled to share my positive experience with this outstanding team. Their expertise and commitment to excellence have significantly contributed to the success of my endeavors. I wholeheartedly recommend their services to anyone in search of top-tier solutions and reliable support. Truly a game-changer!"</p>
+                </div>
+                <!-- <img src="http://placehold.it/60x60" alt=""> -->
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callback-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Request a <em>call back</em></h2>
+              <span>Interested in knowing more? Request a call back for prompt assistance</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" method="post">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      {{ form.name }}
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      {{ form.email }}
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      {{ form.subject }}
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      {{ form.message }}
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="partners contact-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+              <div class="partner-item">
+                <img src="{% static 'assets/images/logo.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center section-heading">
+            <h2>Our <em>Partners</em> and <em>Membership</em></h2>
+            <span>Our partners are the best in the market - Slide left-right to see them all</span>
+            <br><br>
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="{% static 'assets/images/natcom.png' %}" title="1" alt="1">
+              </div>
+              <div class="partner-item">
+                <img src="{% static 'assets/images/nccr.png' %}" title="2" alt="2">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/klab.png' %}" title="3" alt="3">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/bpn.png' %}" title="4" alt="4">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner1.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner2.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner3.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/psf.png' %}" title="5" alt="5">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4>KURANGA DIGITAL Ltd</h4>
+            <p style="text-align: justify;">Kuranga Ltd is a leading finance company dedicated to empowering individuals through comprehensive training programs and strategic connections.</p>
+
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Useful Links</h4>
+            <ul class="menu-list">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="#">Review</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="{% url 'about' %}">What people thing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Quick Access</h4>
+            <ul class="menu-list">
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="#">How We Work</a></li>
+              <li><a href="#">Quick Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; Kuranga Digital Ltd | since 2014
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/owl.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

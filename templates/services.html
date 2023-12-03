@@ -1,0 +1,555 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Finance Business - Services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-finance-business.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+<!--
+
+Finance Business TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+250-781-278-118</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+            <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"><h2>Kuranga DIGITAL Ltd</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'services' %}">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html">One Page</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Our Services</h1>
+            <span>We are over 7 years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          <div class="col-md-4">
+            <ul>
+              <li><a href='#tabs-1'>QuickBooks & Xero Setup <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-19'>Training (Individual or Group) <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-20'>Software Sales <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>Company Setting <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-5'>Taxes <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>Add-on Software <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Chart of Accounts <i class="fa fa-angle-right"></i></a></li>  
+              <li><a href='#tabs-6'>Inventory <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-7'>Budget & Payroll <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-8'>Customer & Supplier <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-9'>Purchase Order & Estimate <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-10'>Invoice & Bill <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-11'>Account Receivables <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-12'>Account Payable <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-13'>Bank Transaction <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-14'>Bookkeeping <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-15'>Reconciliation <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-16'>Reports <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-17'>Financial Statements <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-18'>One To One Consultation <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-21'>Troubleshooting / Problem Resolution <i class="fa fa-angle-right"></i></a></li>
+
+
+
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="{% static 'assets/images/quickbook.png' %}" alt="">
+                <h4>Initial QuickBooks & Xero Setup</h4>
+                <!-- <p>Vivamus sed feugiat elit. Pellentesque pretium, massa at placerat vehicula, neque turpis pulvinar tortor, eget convallis lorem odio non tortor. Donec massa est, fermentum sit amet felis ac, maximus luctus elit. Vivamus aliquet, dolor id imperdiet imperdiet, dui diam aliquet dui, a euismod metus enim ac velit. Vivamus eu tristique odio, vel tristique quam.
+                <br><br>Proin eu molestie risus. Etiam suscipit pretium odio, at consectetur nisi. Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante.</p>
+                 -->
+                 <!-- <h4>Initial QuickBooks & Xero Setup</h4> -->
+                <p  style="text-align: justify;">Streamline your financial processes from the start with our comprehensive Initial QuickBooks & Xero Setup service. At Kuranga Ltd, we understand the importance of a solid foundation in accounting software for the success of your business. Our expert team will guide you through the entire setup process, ensuring that QuickBooks or Xero is tailored to meet the specific needs of your organization.</p>
+                <br><p style="text-align: justify;">We cover everything from account creation and chart of accounts setup to connecting bank feeds and configuring tax settings. By choosing our service, you'll benefit from a customized setup that aligns with your industry, making financial management more efficient and accurate.</p>
+                <br><p  style="text-align: justify;">Experience the ease of navigating your financial data, generating insightful reports, and ensuring compliance with our Initial QuickBooks & Xero Setup. Let Kuranga Ltd be your partner in building a robust financial infrastructure for sustainable growth and success.</p>
+
+              </article>
+              <article id='tabs-2'>
+                <img src="{% static 'assets/images/single_service_02.jpg' %}" alt="">
+                <h4>Company Setting</h4>
+                <p style="text-align: justify;">Optimize your company's financial operations with our specialized Company Setting service at Kuranga Ltd. Our dedicated team is committed to fine-tuning your accounting software to align seamlessly with the unique requirements of your business.
+                <br><br>During the Company Setting process, we delve into the intricacies of your organization, configuring settings tailored to your industry, size, and specific needs. From customizing invoicing templates to setting up user roles and permissions, we ensure that your accounting system reflects the individuality of your company.
+                <br><br>At Kuranga Ltd, we understand that efficient company settings contribute significantly to streamlined workflows and improved decision-making. Our experts will work closely with you to enhance the functionality of your accounting software, allowing you to focus on what matters most – growing your business.
+                <br><br>Experience the benefits of a finely-tuned financial system. Choose Kuranga Ltd for Company Setting services that elevate the efficiency and effectiveness of your company's financial operations.</p>
+
+              </article>
+              <article id='tabs-3'>
+                <img src="{% static 'assets/images/single_service_03.jpg' %}" alt="">
+                <h4>Help Selecting the Right Add-on Software</h4>
+                <p>Make informed decisions about enhancing your financial management system with our expert assistance in selecting the right add-on software at Kuranga Ltd. We understand that the right tools can significantly amplify the capabilities of your accounting software, and our team is here to guide you through the selection process.
+                <br><br>Our consultants will work closely with you to identify your specific business needs, challenges, and goals. Based on this understanding, we'll recommend and assist in the implementation of add-on software that seamlessly integrates with your existing system. Whether you're looking for solutions in payroll, inventory management, or customer relationship management, we've got you covered.
+                <br><br>Choosing the right add-on software can streamline workflows, enhance reporting capabilities, and boost overall efficiency. Let Kuranga Ltd be your partner in optimizing your financial ecosystem with our Help Selecting the Right Add-on Software service. Empower your business with the tools it needs to thrive in today's dynamic marketplace.</p>
+
+              </article>
+              <article id='tabs-4'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Chart of Accounts</h4>
+                <p style="text-align: justify;">Establish a solid financial foundation for your business with our expert Chart of Accounts services at Kuranga Ltd. The Chart of Accounts is a crucial component of your accounting system, providing a systematic way to organize, categorize, and track financial transactions.
+                <br><br>Our dedicated team understands the importance of a well-structured Chart of Accounts tailored to your specific industry and business needs. We work closely with you to create a customized chart that accurately reflects your financial structure, making it easier to track income, expenses, assets, and liabilities.
+                <br><br>Whether you're setting up a new business or seeking to revamp your existing Chart of Accounts, Kuranga Ltd is here to guide you through the process. We ensure that your Chart of Accounts aligns with industry standards, compliance requirements, and supports your business's unique reporting needs.
+                <br><br>Empower your financial management with a well-organized and efficient Chart of Accounts. Choose Kuranga Ltd for expert assistance in creating a financial framework that sets the stage for accurate reporting and strategic decision-making.</p>
+
+              </article>
+
+              <article id='tabs-5'>
+                <img src="{% static 'assets/images/taxes.jpg' %}" alt="">
+                <h4>Taxes</h4>
+                <p style="text-align: justify;">Navigate the complexities of tax compliance with confidence through our comprehensive Tax services at Kuranga Ltd. Our team of tax experts is dedicated to ensuring that your business remains compliant with ever-evolving tax regulations while maximizing opportunities for savings.
+                <br><br>At Kuranga Ltd, we offer a range of tax services tailored to meet the diverse needs of businesses. From accurate preparation and filing of tax returns to strategic tax planning, we provide proactive solutions to minimize your tax liability and optimize your financial outcomes.
+                <br><br>Our experts stay abreast of the latest tax laws and regulations, allowing us to provide timely advice and support to businesses of all sizes. Whether you need assistance with income taxes, VAT, or other tax-related matters, we've got the knowledge and experience to guide you through the process.
+                <br><br>Choose Kuranga Ltd as your partner in managing taxes effectively. Our goal is to help you navigate the intricate landscape of taxation, ensuring financial compliance and positioning your business for long-term success.</p>
+
+              </article>
+
+              <article id='tabs-6'>
+                <img src="{% static 'assets/images/inventory-service.jpg' %}" alt="">
+                <h4>Inventory</h4>
+                <p style="text-align: justify;">Optimize your inventory management processes with Kuranga Ltd's specialized Inventory services. We understand that effective inventory control is essential for businesses to operate smoothly and efficiently. Our team of experts is dedicated to helping you streamline your inventory operations, reduce costs, and enhance overall productivity.
+                <br><br>Whether you are a retailer, manufacturer, or distributor, our Inventory services are tailored to meet your unique business requirements. We offer comprehensive solutions, including setting up and managing inventory systems, implementing best practices for stock control, and providing insights to help you make informed decisions about your inventory levels.
+                <br><br>At Kuranga Ltd, we recognize the significance of accurate inventory management in maintaining customer satisfaction and improving cash flow. Our goal is to empower your business with the tools and strategies needed to optimize stock levels, minimize holding costs, and enhance overall supply chain efficiency.
+                <br><br>Choose Kuranga Ltd as your partner in achieving efficient and effective inventory management. Let us help you unlock the full potential of your business through strategic inventory solutions tailored to your industry and operational needs.</p>
+
+              </article>
+
+              <article id='tabs-7'>
+                <img src="{% static 'assets/images/payroll.jpg' %}" alt="">
+                <h4>Budget & Payroll</h4>
+                <p style="text-align: justify;">Empower your business with strategic financial planning and seamless payroll processing through Kuranga Ltd's specialized Budget & Payroll services. Our dedicated team is committed to helping you achieve financial stability, plan for growth, and ensure timely and accurate payroll administration.
+                <br><br>With our Budget services, we assist you in developing comprehensive financial plans tailored to your business goals. Whether you're looking to create annual budgets, forecast future expenses, or optimize resource allocation, Kuranga Ltd provides the expertise to guide you through the budgeting process.
+                <br><br>On the payroll front, we streamline your payroll operations, ensuring compliance with regulations and timely disbursement of salaries. Our payroll services cover everything from employee onboarding to tax compliance, allowing you to focus on your core business activities while we handle the intricacies of payroll administration.
+                <br><br>At Kuranga Ltd, we understand the critical role that effective budgeting and payroll play in the success of any organization. Our goal is to equip your business with the financial tools and processes needed to thrive in today's dynamic business landscape.
+                <br><br>Choose Kuranga Ltd for Budget & Payroll services that enhance financial planning precision and streamline payroll administration, contributing to the overall success of your business.</p>
+
+              </article>
+
+              <article id='tabs-8'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Customer & Supplier</h4>
+                <p>Strengthen your relationships with customers and suppliers through Kuranga Ltd's dedicated Customer & Supplier services. We understand the pivotal role that effective management of these relationships plays in the success of your business. Our comprehensive services are designed to help you optimize interactions, enhance communication, and foster mutually beneficial partnerships.</p>
+                <p>With our Customer services, we assist in implementing customer relationship management (CRM) strategies to improve customer satisfaction, retention, and overall experience. Whether you're looking to streamline communication, analyze customer data, or implement loyalty programs, Kuranga Ltd provides tailored solutions to meet your unique needs.</p>
+                <p>On the Supplier side, our services focus on optimizing supplier relationships, ensuring efficient supply chain management, and negotiating favorable terms. We work with you to enhance procurement processes, manage supplier performance, and strengthen the overall supplier network to support your business goals.</p>
+                <p>At Kuranga Ltd, we recognize that strong relationships with customers and suppliers are integral to the success and growth of your business. Our goal is to provide you with the tools and strategies needed to build lasting and mutually beneficial connections.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Customer & Supplier relationships, and let us contribute to the overall success and sustainability of your business.</p>
+
+              </article>
+
+              <article id='tabs-9'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Purchase Order & Estimate</h4>
+                <p>Streamline your procurement processes and project planning with Kuranga Ltd's specialized Purchase Order & Estimate services. Our dedicated team is here to assist you in creating efficient purchase order workflows and accurate project estimates to enhance overall operational effectiveness.</p>
+                <p>With our Purchase Order services, we guide you in creating standardized and transparent purchase order systems. We help you automate the ordering process, track purchases, and manage vendor relationships effectively. Our goal is to simplify procurement, minimize errors, and optimize your supply chain management.</p>
+                <p>For project-based businesses, our Estimate services are tailored to help you create accurate project estimates, allowing for better planning and resource allocation. We work with you to develop comprehensive estimates that consider all aspects of your projects, ensuring that you can deliver on time and within budget.</p>
+                <p>At Kuranga Ltd, we understand the importance of precision in purchase orders and estimates for the success of your business. Our team is dedicated to providing you with the tools and strategies needed to enhance efficiency, reduce costs, and drive project success.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Purchase Order & Estimate processes, and let us contribute to the overall success and sustainability of your business.</p>
+
+              </article>
+
+              <article id='tabs-10'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Invoice & Bill</h4>
+                <p>Optimize your billing and invoicing processes with Kuranga Ltd's dedicated Invoice & Bill services. We understand the critical role that accurate and timely invoicing plays in maintaining cash flow and sustaining positive customer relationships. Our comprehensive services are designed to help you streamline your billing operations and create professional, effective invoices.</p>
+                <p>With our Invoice services, we guide you in creating customized and professional invoices that reflect the professionalism of your business. We help you automate the invoicing process, track payments, and ensure compliance with invoicing standards. Our goal is to simplify billing, reduce errors, and improve your overall financial management.</p>
+                <p>On the Bill side, we assist in managing your payables efficiently. From tracking and organizing bills to ensuring timely payments, our services contribute to maintaining positive relationships with suppliers and avoiding late fees. Kuranga Ltd is here to streamline your bill payment process, providing you with the tools needed for effective expense management.</p>
+                <p>At Kuranga Ltd, we recognize that efficient invoicing and billing are integral to the financial health of your business. Our team is dedicated to providing you with the tools and strategies needed to enhance efficiency, reduce costs, and ensure accurate financial transactions.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Invoice & Bill processes, and let us contribute to the overall success and sustainability of your business.</p>
+
+              </article>
+
+              <article id='tabs-11'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Account Receivables</h4>
+                <p>Optimize your cash flow and manage outstanding payments effectively with Kuranga Ltd's specialized Account Receivables services. We understand the importance of timely receivables management in maintaining financial stability and sustaining a healthy business operation. Our comprehensive services are designed to help you streamline your receivables processes and enhance overall financial performance.</p>
+                <p>With our Account Receivables services, we assist you in creating efficient systems for tracking customer invoices, monitoring payment timelines, and implementing effective collection strategies. We focus on reducing outstanding receivables, improving cash flow, and ensuring that your business receives payments in a timely manner.</p>
+                <p>Kuranga Ltd is committed to providing you with the tools and strategies needed to enhance your receivables management. Our team works closely with you to customize solutions that align with your business goals, improving your ability to forecast cash flow and make informed financial decisions.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Account Receivables processes, and let us contribute to the overall success and sustainability of your business by ensuring a healthy and well-managed cash flow.</p>
+
+              </article>
+
+              <article id='tabs-12'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Account Payable</h4>
+                <p>Streamline your payables management and maintain positive relationships with suppliers through Kuranga Ltd's specialized Account Payable services. We understand the significance of efficient payables processes in managing costs, optimizing cash flow, and fostering strong vendor relationships. Our comprehensive services are designed to help you effectively manage your accounts payable, ensuring timely and accurate payments.</p>
+                <p>With our Account Payable services, we guide you in creating streamlined systems for tracking and organizing bills, managing payment schedules, and implementing effective payment strategies. Our goal is to enhance efficiency, minimize errors, and contribute to maintaining positive relationships with your suppliers.</p>
+                <p>Kuranga Ltd is committed to providing you with the tools and strategies needed to optimize your payables management. Our team works closely with you to customize solutions that align with your business goals, allowing you to make informed financial decisions and avoid unnecessary late fees.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Account Payable processes, and let us contribute to the overall success and sustainability of your business by ensuring a well-managed and cost-effective payables system.</p>
+
+              </article>
+
+              <article id='tabs-13'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Bank Transaction</h4>
+                <p>Optimize your banking operations and gain better control over your financial transactions with Kuranga Ltd's specialized Bank Transaction services. We understand the pivotal role that accurate and efficient bank transactions play in the financial management of your business. Our comprehensive services are designed to help you streamline your banking processes, reconcile accounts, and ensure the accuracy of financial records.</p>
+                <p>With our Bank Transaction services, we guide you in managing deposits, withdrawals, and reconciling bank statements with your financial records. We assist in implementing best practices for secure and efficient banking operations, minimizing errors and discrepancies. Our goal is to provide you with the tools and strategies needed to maintain accurate and up-to-date financial information.</p>
+                <p>Kuranga Ltd is committed to ensuring that your business has a robust system in place for handling bank transactions. Our team works closely with you to customize solutions that align with your business goals, allowing you to make informed financial decisions and enhance overall financial transparency.</p>
+                <p>Choose Kuranga Ltd as your partner in optimizing Bank Transaction processes, and let us contribute to the overall success and sustainability of your business by ensuring a secure, efficient, and well-managed banking system.</p>
+
+              </article>
+
+              <article id='tabs-14'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Bookkeeping</h4>
+                <p>Ensure the financial health and compliance of your business with Kuranga Ltd's professional Bookkeeping services. We understand that accurate and organized financial records are essential for informed decision-making and regulatory compliance. Our comprehensive bookkeeping services are designed to help you maintain precise financial records, streamline reporting, and focus on your core business activities.</p>
+                <p>With our Bookkeeping services, we take care of recording financial transactions, maintaining ledgers, and organizing financial statements. Our experienced team is committed to ensuring that your financial records are up-to-date, accurate, and compliant with accounting standards. Whether you are a small business or a growing enterprise, Kuranga Ltd provides customized bookkeeping solutions tailored to your specific needs.</p>
+                <p>We prioritize transparency and precision in bookkeeping to empower your business with reliable financial data. Our goal is to support your business in achieving financial clarity, enabling you to make strategic decisions and meet compliance requirements effortlessly.</p>
+                <p>Choose Kuranga Ltd as your trusted partner in Bookkeeping, and let us contribute to the overall success and sustainability of your business through accurate and reliable financial record-keeping.</p>
+
+              </article>
+
+              <article id='tabs-15'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Reconciliation</h4>
+                <p>Ensure the accuracy and integrity of your financial records with Kuranga Ltd's expert Reconciliation services. We understand the critical role that reconciliation plays in maintaining the health of your financial statements and ensuring transparency in your business operations. Our comprehensive reconciliation services are designed to help you identify and address discrepancies, providing you with a clear and accurate financial picture.</p>
+                <p>With our Reconciliation services, we meticulously review and compare your financial transactions against bank statements, credit card statements, and other financial records. Our experienced team is dedicated to resolving discrepancies promptly, minimizing the risk of errors, and enhancing the overall accuracy of your financial reporting.</p>
+                <p>Kuranga Ltd prioritizes precision in reconciliation to empower your business with reliable financial data. Whether you need bank reconciliation, credit card reconciliation, or other forms of financial statement reconciliation, our goal is to provide you with the tools and strategies needed to maintain financial clarity and compliance.</p>
+                <p>Choose Kuranga Ltd as your partner in Reconciliation, and let us contribute to the overall success and sustainability of your business by ensuring the accuracy and integrity of your financial records.</p>
+
+              </article>
+
+              <article id='tabs-16'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Reports</h4>
+                <p>Gain valuable insights into your business performance with Kuranga Ltd's comprehensive Reports services. We understand the importance of data-driven decision-making and the need for clear, insightful reports to guide your business strategy. Our specialized services are designed to provide you with accurate, customized reports that offer a deep understanding of your financial standing and operational efficiency.</p>
+                <p>With our Reports services, we go beyond standard financial statements to deliver tailored reports that align with your specific business goals. Whether you need performance reports, budget vs. actual analysis, or industry benchmarking, Kuranga Ltd provides a range of reporting solutions to meet your unique requirements.</p>
+                <p>Our experienced team is committed to delivering reports that are not only accurate but also easy to interpret. We work closely with you to understand your reporting needs and ensure that the information presented is relevant and actionable, empowering you to make informed decisions.</p>
+                <p>Choose Kuranga Ltd as your partner in Reports services, and let us contribute to the overall success and sustainability of your business by providing clear, insightful reports that drive strategic decision-making.</p>
+
+              </article>
+
+              <article id='tabs-17'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Financial Statements</h4>
+                <p>Gain a comprehensive understanding of your business's financial health with Kuranga Ltd's expert Financial Statements services. We recognize the pivotal role that accurate financial statements play in guiding strategic decision-making and fostering transparency. Our specialized services are designed to provide you with precise, well-organized financial statements that offer a clear snapshot of your business's financial performance.</p>
+                <p>With our Financial Statements services, we go beyond basic financial reporting to deliver tailored statements that align with your specific business goals. Whether you need income statements, balance sheets, or cash flow statements, Kuranga Ltd provides a range of reporting solutions to meet your unique requirements.</p>
+                <p>Our experienced team is committed to delivering financial statements that not only meet regulatory standards but also offer valuable insights into your business's financial standing. We work closely with you to ensure that the information presented is accurate, relevant, and positioned to support your strategic financial goals.</p>
+                <p>Choose Kuranga Ltd as your trusted partner in Financial Statements services, and let us contribute to the overall success and sustainability of your business by providing accurate and insightful financial statements.</p>
+
+              </article>
+
+              <article id='tabs-18'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>One To One Consultation</h4>
+                <p>Unlock personalized financial insights and guidance with Kuranga Ltd's exclusive One To One Consultation services. We understand that every business is unique, and our specialized one-on-one consultations are designed to address your specific challenges, goals, and opportunities.</p>
+                <p>With our One To One Consultation services, you gain direct access to our team of financial experts. Whether you're seeking strategic financial planning, performance optimization, or personalized advice on complex financial matters, our consultations provide you with a tailored roadmap for success.</p>
+                <p>Our experienced consultants work closely with you to understand the intricacies of your business, offering insights and solutions that align with your objectives. Whether you're a startup looking for financial guidance or an established business aiming for growth, our one-on-one consultations are crafted to meet your unique needs.</p>
+                <p>At Kuranga Ltd, we believe in the power of personalized consultation to drive business success. Choose us as your partner in One To One Consultation services, and let us empower you with the knowledge and strategies needed to navigate the financial landscape confidently.</p>
+
+              </article>
+
+              <article id='tabs-19'>
+                <img src="{% static 'assets/images/train-service.png' %}" alt="">
+                <h4>Training (Individual or Group)</h4>
+                <p style="text-align: justify;">Elevate your financial acumen with Kuranga Ltd's comprehensive Training services, tailored for both individuals and groups. We recognize the importance of continuous learning in the dynamic landscape of finance, and our specialized training programs are designed to empower you with the knowledge and skills needed to navigate the complexities of financial management.
+                <br><br>With our Training services, you have the flexibility to choose individual or group training sessions based on your preferences and business needs. Our experienced trainers cover a wide range of topics, from basic financial literacy to advanced financial strategies, ensuring that you and your team are well-equipped to make informed decisions and drive business success.
+                <br><br>Our training programs are interactive, engaging, and focused on practical applications. Whether you're a business owner, finance professional, or a team member, our goal is to enhance your financial proficiency and contribute to the overall success of your business.
+                <br><br>At Kuranga Ltd, we believe in the transformative power of education. Choose us as your partner in Training services, and let us empower you and your team with the knowledge and skills necessary to thrive in the ever-evolving financial landscape.</p>
+
+              </article>
+
+              <article id='tabs-20'>
+                <img src="{% static 'assets/images/software-service.png' %}" alt="">
+                <h4>Software Sales</h4>
+                <p style="text-align: justify;">Optimize your business operations with Kuranga Ltd's Software Sales services. We understand the pivotal role that software plays in enhancing efficiency, automating tasks, and streamlining processes. Our specialized services are designed to provide you with access to cutting-edge software solutions that align with your business needs and goals.
+                <br>With our Software Sales services, you gain access to a curated selection of industry-leading software products. Whether you're looking for accounting software, financial management tools, or specialized business applications, Kuranga Ltd offers a range of solutions to meet your unique requirements.
+                <br>Our team of experts works closely with you to understand your business processes and recommend software solutions that enhance productivity and drive growth. We prioritize user-friendly interfaces, scalability, and integration capabilities to ensure that the software seamlessly aligns with your business operations.
+                <br>At Kuranga Ltd, we believe in the transformative power of technology. Choose us as your partner in Software Sales, and let us guide you in selecting and implementing software solutions that contribute to the overall success and innovation of your business.</p>
+
+              </article>
+
+              <article id='tabs-21'>
+                <img src="{% static 'assets/images/single_service_04.jpg' %}" alt="">
+                <h4>Troubleshooting / Problem Resolution</h4>
+                <p>Resolve financial challenges swiftly with Kuranga Ltd's expert Troubleshooting and Problem Resolution services. We understand that unexpected issues can arise in the complex landscape of finance, impacting your business's efficiency and stability. Our specialized services are designed to identify and address problems promptly, ensuring a seamless and resilient financial operation.</p>
+                <p>With our Troubleshooting services, our experienced team dives into the root causes of financial challenges, whether they be software-related, process inefficiencies, or other issues impacting your financial health. We prioritize swift problem resolution to minimize downtime and mitigate potential risks to your business.</p>
+                <p>At Kuranga Ltd, we believe in proactive problem-solving. Our team not only addresses current issues but also provides recommendations to prevent similar challenges in the future. Whether you're facing accounting discrepancies, software glitches, or operational bottlenecks, we have the expertise to troubleshoot and implement effective solutions.</p>
+                <p>Choose Kuranga Ltd as your partner in Troubleshooting and Problem Resolution, and let us empower your business with the expertise needed to overcome financial challenges and maintain a resilient financial operation.</p>
+
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callback-form callback-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Request a <em>call back</em></h2>
+              <span>Interested in knowing more? Request a call back for prompt assistance</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center section-heading">
+            <h2>Our <em>Partners</em> and <em>Membership</em></h2>
+            <span>Our partners are the best in the market - Slide left-right to see them all</span>
+            <br><br>
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="{% static 'assets/images/natcom.png' %}" title="1" alt="1">
+              </div>
+              <div class="partner-item">
+                <img src="{% static 'assets/images/nccr.png' %}" title="2" alt="2">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/klab.png' %}" title="3" alt="3">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/bpn.png' %}" title="4" alt="4">
+              </div>
+              
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner1.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner2.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/partner3.png' %}" title="5" alt="5">
+              </div>
+
+              <div class="partner-item">
+                <img src="{% static 'assets/images/psf.png' %}" title="5" alt="5">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4>Kuranga DIGITAL Ltd</h4>
+            <p style="text-align: justify;">Kuranga Ltd is a leading finance company dedicated to empowering individuals through comprehensive training programs and strategic connections.</p>
+
+            <ul class="social-icons">
+            <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Useful Links</h4>
+            <ul class="menu-list">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">Review</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="{% url 'about' %}">What people thing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Quick Access</h4>
+            <ul class="menu-list">
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'about' %}">How We Work</a></li>
+              <li><a href="{% url 'contact' %}">Quick Support</a></li>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4>Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; Kuranga Digital Ltd | since 2014
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/owl.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
