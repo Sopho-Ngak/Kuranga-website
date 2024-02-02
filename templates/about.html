@@ -67,7 +67,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Kuranga DIGITAL Ltd</h2></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><h2>Kuranga DIGITAL Ltd</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -83,6 +83,9 @@ https://templatemo.com/tm-545-finance-business
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'services' %}">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'programs' %}">Our Programs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
@@ -102,7 +105,7 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <h1>About Us</h1>
-            <span>We have over 7 years of experience</span>
+            <span>We have over 10 years of experience</span>
           </div>
         </div>
       </div>
@@ -359,6 +362,7 @@ https://templatemo.com/tm-545-finance-business
             <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>

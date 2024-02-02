@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
+    <!-- fivicon -->
     <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/png" sizes="16x16">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Contact Us</title>
+    <title>Programs</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -28,7 +28,6 @@ Finance Business TemplateMo
 https://templatemo.com/tm-545-finance-business
 
 -->
-
 <style>
   /* Add any custom styling for the popup here */
   .popup {
@@ -91,11 +90,11 @@ https://templatemo.com/tm-545-finance-business
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li>   
-              <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+            <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
             </ul>
           </div>
         </div>
@@ -105,7 +104,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}"><h2>Kuranga Digital Ltd</h2></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><h2>Kuranga DIGITAL Ltd</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -122,15 +121,15 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'services' %}">Our Services</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="{% url 'programs' %}">Our Programs</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="one-page.html">One Page</a> -->
-              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html">One Page</a>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -142,53 +141,108 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Contact Us</h1>
-            <span>feel free to send us a message now!</span>
+            <h1>Our Programs</h1>
+            <span>We are over 10 years of experience</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="contact-information">
+    <div class="single-services">
       <div class="container">
-        <div class="row">
+        <div class="row" id="tabs">
           <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-phone"></i>
-              <h4>Phone</h4>
-              <p style="text-align: justify;">Feel free to reach out to us by phone during our business hours. Our dedicated team is here to assist you with any inquiries or concerns you may have.</p>
-              <a href="#">+250-781-278-118</a>
-            </div>
+            <ul>
+              <li><a href='#tabs-1'>ASA<i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>MY PATHPRENEUR<i class="fa fa-angle-right"></i></a></li>
+              <!-- <li><a href='#tabs-3'>DOD<i class="fa fa-angle-right"></i></a></li> -->
+
+              <!-- <li><a href='#tabs-20'>Software Sales <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>Company Setting <i class="fa fa-angle-right"></i></a></li> -->
+              <!-- <li><a href='#tabs-5'>Taxes <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>Add-on Software <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Chart of Accounts <i class="fa fa-angle-right"></i></a></li>  
+              <li><a href='#tabs-6'>Inventory <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-7'>Budget & Payroll <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-8'>Customer & Supplier <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-9'>Purchase Order & Estimate <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-10'>Invoice & Bill <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-11'>Account Receivables <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-12'>Account Payable <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-13'>Bank Transaction <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-14'>Bookkeeping <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-15'>Reconciliation <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-16'>Reports <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-17'>Financial Statements <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-18'>One To One Consultation <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-21'>Troubleshooting / Problem Resolution <i class="fa fa-angle-right"></i></a></li> -->
+
+
+
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-envelope"></i>
-              <h4>Email</h4>
-              <p style="text-align: justify;">If you prefer electronic communication, you can send us an email. Our team will respond to your message as soon as possible.</p>
-              <!-- <a href="#">info@company.com</a> -->
-              <a href="mailto:your@email.com">info@kuranga.co</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="contact-item">
-              <i class="fa fa-map-marker"></i>
-              <h4>Location</h4>
-              <p style="text-align: justify;">Visit us at our physical location to connect in person at Kicukiro Sonatubes, UTB Bulding, 1st floor, Inindi House, KN 3 Rd, Kigali</p>
-              <p></p>
-              <a href="https://maps.app.goo.gl/zo5TnbWmdahKMTFn7" target="_blank">View on Google Maps</a>
-            </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              
+              <article id='tabs-1'>
+                <img src="{% static 'assets/images/ASA-program.png' %}" alt="">
+                <h4>Accounting Software Academy</h4>
+                <p  style="text-align: justify;">ASA(Accounting Software Academy)  is  the fully hands on  program we initiated to bridge the gap between classroom learning and labor market in the area of Accounting, Management and Finance  to help students find their dream jobs or create their own with confidence and competence  with  “QuickBooks”. This guarantees the success and marketability of your Students and your institution</p>
+                <h4>PROBLEM WORTH SOLVING</h4>
+                <p style="text-align: justify;">Rwanda and the world in general is quickly adapting technology in all sectors of life. However, looking at the academic Curriculum, it does not move with the acceleration of update in variants and versions in the technology field. This shortcoming created a very big gap comparing acquired skills from classroom to the labor market requirements where graduates find themselves lost! 
+                </p>
+                <h4>Vision</h4>
+                <p style="text-align: justify;">Increasing digital career readiness by developing 21st century skills through personal finance and entrepreneurship education.
+                </p>
+                <h4>Mission</h4>
+                <ul>
+                  <li> Creating new opportunities</li>
+                  <li>Revitalizing communities</li>
+                  <li> Expanding possibilities.</li>
+                </ul>
+                <h4>COMMUNITY  IMPACT</h4>
+                <p style="text-align: justify;">In 10 years of operation, KURANGA DIGITAL Ltd together with our partners, have had a significant impact on the community and the country  economic ,through which the major focus is to improve  both Hands on skills Education , businesses & NGOs operations  in the competitive digital finance tool “QuickBooks” through capacity building program (ASA) and consultancy . We improved the labor market fit skills for students, graduates and job seekers where more than 75%  from  “ASA”  were linked with jobs. Our program increases students confidence ,helps their resumes stand out ,increases the value of  Academics and provides also  additional recruitment tool to  Academics program. 
+                </p>
+                <h4> Beneficiaries</h4>
+                <p style="text-align: justify;">ASA program  intends to help both Schools and students to enhance practical learning skills in the field of accounting and finance and also  to access in full all QuickBooks toolkits.
+                </p>
+              </article>
+
+              <article id='tabs-2'>
+                <img src="{% static 'assets/images/pathprener.png' %}" alt=""><br>
+                <h4>My Pathprener</h4>
+                <p style="text-align: justify;">MyPathpreneur program is specifically designed for passionate entrepreneurs aiming to strengthen their potential in managing business by equipping them with practical financial literacy and introducing innovative technology tools in finance (QuickBooks).</p>
+                <h4>PROBLEM WORTH SOLVING</h4>
+                <p style="text-align: justify;">Most businesses are created by passionate entrepreneurs who significantly lack financial and business management skills in their operations. Thus businesses are unable to survive on the market on the long run even if those businesses are making good sales on a regular basis, simply because such entrepreneurs have insufficient modern skills to manage company’s resources</p>
+                <h4>Vision</h4>
+                <p style="text-align: justify;">Increasing digital career readiness by developing 21st century skills through personal finance and entrepreneurship education.</p>
+                <h4>Mission</h4>
+                <ul style="text-align: justify;">
+                  <li>Creating new opportunities</li>
+                  <li>Revitalizing communities</li>
+                  <li>Expanding possibilities through enhanced technology based skills.</li>
+                </ul>
+                <h4>IMPACT  TO ENTREPRENEURSHIP</h4>
+                <p style="text-align: justify;">In 10 years of operation, KURANGA DGITAL Ltd has had a significant impact on the community through which the major focus is improve business operations & services using digital finance tools such as QuickBooks.
+                  Kuranga Digital embarked on its role in bridging the gap in the labor market and education scheme then opened a training facility which improved labor market fit-tech skills in finance for students ,graduates to embark and grow existing startups. Partnering with you can be of a useful impact to both of us, your beneficiaries and the country. Adults learn better by participation practices with evidence, QuickBooks is all about that in the area of finance and accounting.
+                  </p>
+                  <h4>Beneficiaries</h4>
+                  <p style="text-align: justify;">MyPathpreneur intends to empower young entrepreneurs, women-led businesses and SME’s in hands-on financial skills by using QuickBooks.
+                  </p>
+              </article>
+            </section>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="callback-form contact-us">
+    <div class="callback-form callback-services">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Send us a <em>message</em></h2>
-              <span>We'd love to hear from you! Whether you have questions, feedback, or would like more information, feel free to reach out. Our dedicated team is here to assist you.</span>
+              <h2>Request a <em>call back</em></h2>
+              <span>Interested in knowing more? Request a call back for prompt assistance</span>
             </div>
           </div>
           <div class="col-md-12">
@@ -223,7 +277,7 @@ https://templatemo.com/tm-545-finance-business
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
                     </fieldset>
                   </div>
                 </div>
@@ -234,15 +288,6 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    <div id="map">
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1081.514532568143!2d30.102550175399887!3d-1.96641546575286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca65025fefa7f%3A0x62c2f348e1b93617!2sUniversity%20of%20Tourism%2C%20Technology%20and%20Business%20Studies%20(UTB)!5e1!3m2!1sfr!2srw!4v1701681020549!5m2!1sfr!2srw" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
     <div class="partners">
       <div class="container">
         <div class="row">
@@ -295,14 +340,15 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <img src="{% static 'assets/images/kurang-logo.png' %}" alt="">
-            <!-- <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p> -->
+            <h4>Kuranga DIGITAL Ltd</h4>
             <p style="text-align: justify;">Kuranga Ltd is a leading finance company dedicated to empowering individuals through comprehensive training programs and strategic connections.</p>
+
             <ul class="social-icons">
-              <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li>   
+            <li><a rel="nofollow" href="https://www.facebook.com/KurangaDigital/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/patrickaimableu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://rw.linkedin.com/in/uwitonze-patrick-aimable-17266269" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/kuranga.digital.ltd/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+            <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -329,7 +375,6 @@ https://templatemo.com/tm-545-finance-business
             <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
-                {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -436,6 +481,5 @@ https://templatemo.com/tm-545-finance-business
         });
     });
   </script>
-
   </body>
 </html>

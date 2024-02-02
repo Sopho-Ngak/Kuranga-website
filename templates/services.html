@@ -28,6 +28,42 @@ Finance Business TemplateMo
 https://templatemo.com/tm-545-finance-business
 
 -->
+<style>
+  /* Add any custom styling for the popup here */
+  .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #00ff37;
+      border: 1px solid #00ff37;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  }
+  /* Add styling for the loader */
+  .loader {
+    display: none;
+    border: 4px solid #ad2727;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 1001;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
   </head>
 
   <body>
@@ -86,6 +122,9 @@ https://templatemo.com/tm-545-finance-business
                 <a class="nav-link" href="{% url 'services' %}">Our Services</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{% url 'programs' %}">Our Programs</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
               </li>
               <!-- <li class="nav-item">
@@ -103,7 +142,7 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <h1>Our Services</h1>
-            <span>We are over 7 years of experience</span>
+            <span>We are over 10 years of experience</span>
           </div>
         </div>
       </div>
@@ -359,6 +398,9 @@ https://templatemo.com/tm-545-finance-business
         </div>
       </div>
     </div>
+    <div id="popupMessage" class="popup">
+      Form submitted successfully! Some one from Kuranga Digital Ltd will get back to you shortly.
+    </div>
 
     <div class="callback-form callback-services">
       <div class="container">
@@ -371,26 +413,32 @@ https://templatemo.com/tm-545-finance-business
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="contact" method="post">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      {{ form.full_name }}
                     </fieldset>
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                      {{ form.email }}
                     </fieldset>
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      {{ form.phone_number }}
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      {{ form.subject }}
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      {{ form.message }}
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -493,6 +541,7 @@ https://templatemo.com/tm-545-finance-business
             <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -552,6 +601,53 @@ https://templatemo.com/tm-545-finance-business
           }
       }
     </script>
+    <script>
+      $(document).ready(function() {
+        // Attach a submit event handler to the form
+        $("#yourForm").submit(function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Reference to the form and loader
+            var form = $(this);
+            var loader = $("#loader");
+
+            // Show the loader
+            loader.show();
+
+            // Perform an AJAX form submission
+            $.ajax({
+                type: "POST",
+                url: form.attr("action"),
+                data: form.serialize(),
+                success: function(response) {
+                    // Hide the loader
+                    loader.hide();
+
+                    // Display the popup message
+                    $("#popupMessage").fadeIn();
+                    
+                    // Reset the form fields
+                    $("#contact")[0].reset();
+
+                    // Reset the form fields
+                    form.trigger("reset");
+
+                    // Optionally, you can reload the page after a delay
+                    setTimeout(function() {
+                        location.reload();
+                    }, 2000);  // 2000 milliseconds (2 seconds) delay before reloading
+                },
+                error: function(error) {
+                    console.error("Error:", error);
+
+                    // Hide the loader in case of an error
+                    loader.hide();
+                }
+            });
+        });
+    });
+  </script>
 
   </body>
 </html>
