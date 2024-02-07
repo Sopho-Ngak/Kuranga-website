@@ -9,7 +9,7 @@ def index(request):
         form = CallbackForm(request.POST)
         if form.is_valid():
             form.cleaned_data['call_back_confirmation'] = False
-            print(form.cleaned_data)
+            # print(form.cleaned_data)
             send_email(
                 subject="New Callback Request",
                 context=form.cleaned_data,
@@ -35,7 +35,7 @@ def services(request):
         form = CallbackForm(request.POST)
         if form.is_valid():
             form.cleaned_data['call_back_confirmation'] = False
-            print(form.cleaned_data)
+            # print(form.cleaned_data)
             send_email(
                 subject="New Callback Request",
                 context=form.cleaned_data,
@@ -57,7 +57,7 @@ def contact(request):
         form = CallbackForm(request.POST)
         if form.is_valid():
             form.cleaned_data['call_back_confirmation'] = False
-            print(form.cleaned_data)
+            # print(form.cleaned_data)
             send_email(
                 subject="New Callback Request",
                 context=form.cleaned_data,

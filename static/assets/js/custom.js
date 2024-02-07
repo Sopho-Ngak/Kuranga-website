@@ -38,8 +38,8 @@ jQuery( document ).ready(function( $ ) {
                 dots: true,
                 items: 1,
                 margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
+                autoplay: true,
+                smartSpeed: 7000,
                 autoplayTimeout: 6000,
                 responsive: {
                     0: {
@@ -67,26 +67,26 @@ jQuery( document ).ready(function( $ ) {
                 nav: false,
                 dots: true,
                 items: 1,
-                margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                margin: 20,
+                autoplay: true,
+                smartSpeed: 8000,
+                autoplayTimeout: 1000,
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 2,
                         margin: 0
                     },
                     460: {
-                        items: 1,
+                        items: 3,
                         margin: 0
                     },
                     576: {
-                        items: 2,
+                        items: 3,
                         margin: 20
                     },
                     992: {
                         items: 4,
-                        margin: 30
+                        margin: 20
                     }
                 }
             });
