@@ -103,7 +103,9 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}"><h2>KURANGA DIGITAL Ltd</h2></a>
+          <div onclick="location.href='{% url 'index' %}';" style="text-align: center; cursor: pointer;" class="navbar-brand">
+            <img width="100" height="50" href="{% url 'index' %}" src="{% static 'assets/images/logo.png' %}" alt="">
+          </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -211,7 +213,9 @@ https://templatemo.com/tm-545-finance-business
               <div class="down-content">
                 <h4>Quickbooks & Xero Setup</h4>
                 <p style="text-align: justify;">Effortless financial management begins with our expert QuickBooks and Xero setup services – ensuring seamless and accurate bookkeeping for your business.</p>
-                <a href="{% url 'services' %}" class="filled-button">click for More</a>
+                <div class="button-wrapper"> 
+                  <a href="{% url 'services' %}" class="filled-button">click for More</a>
+              </div>
               </div>
             </div>
           </div>
@@ -221,7 +225,9 @@ https://templatemo.com/tm-545-finance-business
               <div class="down-content">
                 <h4>Budget & payroll</h4>
                 <p style="text-align: justify;">Explore our dedicated Budget and Payroll services for streamlined operations and precise financial planning. simplifying complexities for a streamlined operation</p>
-                <a href="{% url 'services' %}" class="filled-button">click for More</a>
+                <div class="button-wrapper">
+                  <a href="{% url 'services' %}" class="filled-button">click for More</a>
+              </div>
               </div>
             </div>
           </div>
@@ -231,7 +237,9 @@ https://templatemo.com/tm-545-finance-business
               <div class="down-content">
                 <h4>Software Sales</h4>
                 <p style="text-align: justify;">Unlock growth with our Software Sales expertise – tailored solutions for businesses seeking powerful and efficient software solutions.</p>
-                <a href="{% url 'services' %}" class="filled-button">Click for More</a>
+                <div class="button-wrapper">
+                  <a href="{% url 'services' %}" class="filled-button">click for More</a>
+              </div>
               </div>
             </div>
           </div>
@@ -494,7 +502,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>KURANGA DIGITAL Ltd</h4>
+            <img src="{% static 'assets/images/kurang-logo.png' %}" alt="">
             <p style="text-align: justify;">Kuranga Ltd is a leading finance company dedicated to empowering individuals through comprehensive training programs and strategic connections.</p>
 
             <ul class="social-icons">

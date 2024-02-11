@@ -95,8 +95,12 @@ def our_programs(request):
                 to=[form.cleaned_data['email']]
             )
             form = CallbackForm()
-            return render(request, 'our-programs.html', {'form': form, 'success': True})
+            return render(request, 'programs.html', {'form': form, 'success': True})
     form = CallbackForm()
-    return render(request, 'our-programs.html', context={'form': form})
+    return render(request, 'programs.html', context={'form': form})
+
+# def programs_details(request):
+#     return render(request, 'our-programs.html')
+
 
 

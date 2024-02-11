@@ -67,7 +67,9 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}"><h2>Kuranga DIGITAL Ltd</h2></a>
+          <div onclick="location.href='{% url 'index' %}';" style="text-align: center; cursor: pointer;" class="navbar-brand">
+            <img width="100" height="50" href="{% url 'index' %}" src="{% static 'assets/images/logo.png' %}" alt="">
+          </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -364,7 +366,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>KURANGA DIGITAL Ltd</h4>
+            <img src="{% static 'assets/images/kurang-logo.png' %}" alt="">
             <p style="text-align: justify;">Kuranga Ltd is a leading finance company dedicated to empowering individuals through comprehensive training programs and strategic connections.</p>
 
             <ul class="social-icons">
