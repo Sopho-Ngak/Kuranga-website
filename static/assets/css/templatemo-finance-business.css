@@ -83,6 +83,11 @@ a.border-button:hover {
 	color: #10B3EA;
 }
 
+.down-content em {
+	font-style: normal;
+	color: #10B3EA;
+}
+
 .section-heading span {
 	display: block;
 	margin-top: 15px;
@@ -298,7 +303,7 @@ header .navbar {
 .navbar .navbar-nav a.nav-link {
 	text-transform: capitalize;
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: bold;
 	letter-spacing: 0.5px;
 	color: #fff;
 	transition: all 0.5s;
@@ -546,6 +551,15 @@ ul.slick-dots {
 	color: #fff;
 }
 
+.button-wrapper {
+    text-align: center; /* Center-align content */
+  }
+  
+  .button-wrapper a {
+    display: inline-block; /* Display as block element */
+  }
+  
+
 .request-form h4 {
 	font-size: 22px;
 	font-weight: 600;
@@ -569,7 +583,7 @@ ul.slick-dots {
 /* Services */
 
 .services {
-	margin-top: 140px;
+	margin-top: 140px;	
 }
 
 .service-item img {
